@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas Asignadas - Kids know app</title>
+    <link rel="stylesheet" href="css/tareas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo para la imagen en la esquina superior izquierda */
+        .corner-image {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 210px; /* Ancho especificado */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Imagen en la esquina superior izquierda -->
+    <img src="img/WhatsApp Image 2024-10-27 at 18.58.44.jpeg" alt="Logo Kids Know App" class="corner-image">
+
+    <header class="header-tareas">
+        <h1>Tareas Asignadas</h1>
+        <p>Consulta tus tareas y entrega tus proyectos de manera organizada y fácil.</p>
+        <div class="back-to-jovenes">
+            <a href="jovenes.html" class="button-tarea">Volver a Jóvenes</a>
+        </div>
+    </header>
+
+    <div class="materias">
+        <div class="materia" onclick="toggleTareas('matematica')">Matemáticas</div>
+        <div class="materia" onclick="toggleTareas('ciencias')">Ciencias</div>
+        <div class="materia" onclick="toggleTareas('historia')">Historia</div>
+        <div class="materia" onclick="toggleTareas('arte')">Arte</div>
+    </div>
+
+    <!-- Contenedor de tareas para Matemáticas -->
+    <div id="matematica" class="container-tareas">
+        <h2>Tareas de Matemáticas</h2>
+        <div class="tarea">
+            <h3>Tarea 1: Operaciones Básicas</h3>
+            <p>Realiza ejercicios de suma y resta.</p>
+            <p><strong>Fecha de Entrega:</strong> 15 de noviembre de 2024</p>
+            <button class="button-terminado" onclick="marcarComoTerminado(this)">Terminado</button>
+            <button class="button-revertir" onclick="revertirTarea(this)" style="display: none;">Revertir</button>
+            <span class="check-icon" style="display: none;">✔️</span>
+        </div>
+        <div class="tarea">
+            <h3>Tarea 2: Problemas de Palabras</h3>
+            <p>Resuelve los problemas de palabras en el libro de texto.</p>
+            <p><strong>Fecha de Entrega:</strong> 20 de noviembre de 2024</p>
+            <button class="button-terminado" onclick="marcarComoTerminado(this)">Terminado</button>
+            <button class="button-revertir" onclick="revertirTarea(this)" style="display: none;">Revertir</button>
+            <span class="check-icon" style="display: none;">✔️</span>
+        </div>
+    </div>
+
+    <!-- Contenedor de tareas para Ciencias -->
+    <div id="ciencias" class="container-tareas">
+        <h2>Tareas de Ciencias</h2>
+        <div class="tarea">
+            <h3>Tarea 1: Proyecto de Biología</h3>
+            <p>Investiga sobre el ciclo de vida de las plantas.</p>
+            <p><strong>Fecha de Entrega:</strong> 25 de noviembre de 2024</p>
+            <button class="button-terminado" onclick="marcarComoTerminado(this)">Terminado</button>
+            <button class="button-revertir" onclick="revertirTarea(this)" style="display: none;">Revertir</button>
+            <span class="check-icon" style="display: none;">✔️</span>
+        </div>
+        <div class="tarea">
+            <h3>Tarea 2: Experimento de Química</h3>
+            <p>Realiza el experimento de reacciones químicas.</p>
+            <p><strong>Fecha de Entrega:</strong> 30 de noviembre de 2024</p>
+            <button class="button-terminado" onclick="marcarComoTerminado(this)">Terminado</button>
+            <button class="button-revertir" onclick="revertirTarea(this)" style="display: none;">Revertir</button>
+            <span class="check-icon" style="display: none;">✔️</span>
+        </div>
+    </div>
+
+    <!-- Contenedor de tareas para Historia -->
+    <div id="historia" class="container-tareas">
+        <h2>Tareas de Historia</h2>
+        <div class="tarea">
+            <h3>Tarea 1: Ensayo sobre Civilizaciones Antiguas</h3>
+            <p>Escribe un ensayo de 2 páginas.</p>
+            <p><strong>Fecha de Entrega:</strong> 5 de diciembre de 2024</p>
+            <button class="button-terminado" onclick="marcarComoTerminado(this)">Terminado</button>
+            <button class="button-revertir" onclick="revertirTarea(this)" style="display: none;">Revertir</button>
+            <span class="check-icon" style="display: none;">✔️</span>
+        </div>
+    </div>
+
+    <!-- Contenedor de tareas para Arte -->
+    <div id="arte" class="container-tareas">
+        <h2>Tareas de Arte</h2>
+        <div class="tarea">
+            <h3>Tarea 1: Proyecto de Dibujo</h3>
+            <p>Crea un dibujo basado en la naturaleza.</p>
+            <p><strong>Fecha de Entrega:</strong> 10 de diciembre de 2024</p>
+            <button class="button-terminado" onclick="marcarComoTerminado(this)">Terminado</button>
+            <button class="button-revertir" onclick="revertirTarea(this)" style="display: none;">Revertir</button>
+            <span class="check-icon" style="display: none;">✔️</span>
+        </div>
+    </div>
+
+    <!-- Botón para volver a la sección de jóvenes -->
+
+    <script src="js/tareas.js"></script>
+</body>
+</html>
+
+
+

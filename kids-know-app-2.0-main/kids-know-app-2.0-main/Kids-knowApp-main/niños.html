@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Infantil - 5 a 10 años</title>
+    <link rel="stylesheet" href="css/niños.css">
+    <style>
+        /* Estilo para la imagen en la esquina superior izquierda */
+        .corner-image {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 210px; /* Tamaño especificado */
+            height: auto;
+        }
+
+        /* Estilos para el icono de verificación */
+        .checkmark {
+            display: none; /* Oculto por defecto */
+            color: green;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        /* Estilos para el botón de terminado */
+        .button-terminado {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        /* Cambio de color del botón después de presionarlo */
+        .button-terminado.completado {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Imagen en la esquina superior izquierda -->
+    <img src="img/WhatsApp Image 2024-10-27 at 18.58.44.jpeg" alt="Logo Zona Infantil" class="corner-image">
+
+    <!-- Encabezado principal -->
+    <header>
+        <h1>¡Bienvenidos a la Zona Infantil!</h1>
+        <p>Donde el aprendizaje es una aventura divertida</p>
+        <a href="main.html" class="button back-button">Volver al Menú Principal</a>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+
+        <!-- Sección de Publicaciones -->
+        <section class="section" id="publicaciones">
+            <h2>Publicaciones Recientes</h2>
+            <div class="card">
+                <h3>Proyecto de Ciencia</h3>
+                <p>¡Felicidades a los niños de 3er grado por su increíble proyecto de volcanes!</p>
+            </div>
+            <div class="card">
+                <h3>Excursión al Zoológico</h3>
+                <p>El próximo viernes, no olviden sus permisos firmados para la excursión.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Tareas -->
+        <section class="section" id="tareas">
+            <h2>Tareas</h2>
+            <div class="card">
+                <h3>Matemáticas</h3>
+                <p>Completa las páginas 10-15 del libro para el martes.</p>
+                <!-- Botón de Terminado para Matemáticas -->
+                <button class="button-terminado" onclick="toggleTareaCompletada(this)">Terminado</button>
+                <!-- Icono de verificación verde para Matemáticas -->
+                <span class="checkmark">✔</span>
+            </div>
+            <div class="card">
+                <h3>Arte</h3>
+                <p>Trae una obra de arte que hayas hecho en casa para el jueves.</p>
+                <!-- Botón de Terminado para Arte -->
+                <button class="button-terminado" onclick="toggleTareaCompletada(this)">Terminado</button>
+                <!-- Icono de verificación verde para Arte -->
+                <span class="checkmark">✔</span>
+            </div>
+        </section>
+
+        <!-- Sección de Actividades -->
+        <section class="section" id="actividades">
+            <h2>Actividades y Juegos</h2>
+            <div class="card">
+                <h3>Juego de Palabras</h3>
+                <p>¡Forma palabras con las letras en el menor tiempo posible!</p>
+                <button class="button-participar" onclick="window.open('https://www.juegos-mentales.com/Palabras', '_blank')">Jugar Ahora</button>
+            </div>
+            <div class="card">
+                <h3>Puzzle de Números</h3>
+                <p>Resuelve el rompecabezas numérico y mejora tus habilidades matemáticas.</p>
+                <button class="button-participar" onclick="window.open('https://www.livesudoku.com/indexes.php', '_blank')">Jugar Ahora</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Función para alternar el estado de una tarea como completada/no completada
+        function toggleTareaCompletada(button) {
+            const checkmark = button.nextElementSibling; // Selecciona el ícono de verificación
+            if (button.classList.contains("completado")) {
+                // Si está marcado como completado, revertir
+                button.classList.remove("completado");
+                checkmark.style.display = "none";
+            } else {
+                // Si no está completado, marcarlo
+                button.classList.add("completado");
+                checkmark.style.display = "inline";
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+

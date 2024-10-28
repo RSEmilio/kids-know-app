@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicaciones Recientes - Kids know app</title>
+    <link rel="stylesheet" href="css/publicaciones.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo para la imagen en la esquina superior izquierda */
+        .corner-image {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 210px; /* Ancho especificado */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Imagen en la esquina superior izquierda -->
+    <img src="img/WhatsApp Image 2024-10-27 at 18.58.44.jpeg" alt="Logo Kids Know App" class="corner-image">
+
+    <header class="header-publicaciones">
+        <h1>Publicaciones Recientes</h1>
+        <p>Descubre las últimas innovaciones y noticias de nuestro colegio.</p>
+        <div class="back-to-jovenes">
+            <a href="jovenes.html" class="button-tarea">Volver a Jóvenes</a>
+        </div>
+    </header>
+
+    <div class="publicaciones-container">
+        <!-- Publicación 1 -->
+        <div class="publicacion">
+            <h2>Título de la Publicación 1</h2>
+            <p>Resumen breve de la publicación 1...</p>
+            <button class="button-leer-mas" onclick="togglePublicacion('info1')">Leer más</button>
+            <div id="info1" class="info-publicacion" style="display: none;">
+                <p>Detalles adicionales sobre la publicación 1. Aquí puedes incluir más información relevante y didáctica.</p>
+            </div>
+        </div>
+
+        <!-- Publicación 2 -->
+        <div class="publicacion">
+            <h2>Título de la Publicación 2</h2>
+            <p>Resumen breve de la publicación 2...</p>
+            <button class="button-leer-mas" onclick="togglePublicacion('info2')">Leer más</button>
+            <div id="info2" class="info-publicacion" style="display: none;">
+                <p>Detalles adicionales sobre la publicación 2. Aquí puedes incluir más información relevante y didáctica.</p>
+            </div>
+        </div>
+
+        <!-- Publicación 3 -->
+        <div class="publicacion">
+            <h2>Título de la Publicación 3</h2>
+            <p>Resumen breve de la publicación 3...</p>
+            <button class="button-leer-mas" onclick="togglePublicacion('info3')">Leer más</button>
+            <div id="info3" class="info-publicacion" style="display: none;">
+                <p>Detalles adicionales sobre la publicación 3. Aquí puedes incluir más información relevante y didáctica.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón para volver a la sección de jóvenes -->
+
+
+    <script src="js/publicaciones.js"></script>
+</body>
+</html>

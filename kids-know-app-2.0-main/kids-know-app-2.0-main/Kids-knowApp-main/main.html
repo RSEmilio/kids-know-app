@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids know app</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      /* Estilo para la imagen en la esquina superior izquierda */
+      .corner-image {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        width: 210px; /* Tamaño mediano */
+        height: auto;
+      }
+
+      /* Estilo para el botón de cerrar sección */
+      .close-button {
+          position: absolute;
+          top: 20px;
+          right: 10px;
+          background-color: red;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 15px;
+          cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Imagen en la esquina superior izquierda -->
+    <img src="img/WhatsApp Image 2024-10-27 at 18.58.44.jpeg" alt="Logo Kids Know" class="corner-image">
+
+    <!-- Botón de cerrar sección -->
+    <button class="close-button" onclick="window.location.href='login.html'">Cerrar sesión</button>
+
+    <header class="header">
+        <h1>Kids know app</h1>
+        <p>Un espacio donde aprender es una aventura divertida para todas las edades.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Contenedor para Niños 5-10 años -->
+        <div class="section">
+            <div class="section-content">
+                <img src="img/5.jpg" alt="Niños 5-10 años" class="section-img">
+                <h2>Niños 5-10 años</h2>
+                <p>¡Explora juegos y actividades divertidas mientras aprendes!</p>
+                <a href="niños.html" class="button">Explorar</a>
+            </div>
+        </div>
+
+        <!-- Contenedor para Niños 11-18 años -->
+        <div class="section">
+            <div class="section-content">
+                <img src="img/15.png" alt="Niños 11-18 años" class="section-img">
+                <h2>Niños 11-18 años</h2>
+                <p>Desafíos y actividades interactivas para que aprendas más.</p>
+                <a href="jovenes.html" class="button">Explorar</a>
+            </div>
+        </div>
+
+        <!-- Contenedor para Padres -->
+        <div class="section">
+            <div class="section-content">
+                <img src="img/se.png" alt="Para Padres" class="section-img">
+                <h2>Para Padres</h2>
+                <p>Información útil para apoyar a sus hijos en su aprendizaje.</p>
+                <a href="padres.html" class="button">Información para Padres</a>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
+
